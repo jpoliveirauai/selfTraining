@@ -1,0 +1,6 @@
+docker run -d --name Mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 Mysql
+docker exec -it Mysql bash
+mysql -u root -p
+CREATE USER user IDENTIFIED BY '123456';
+create database Training;
+GRANT ALL PRIVILEGES ON Neppo.* TO user;

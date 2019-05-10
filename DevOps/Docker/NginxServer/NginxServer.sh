@@ -1,0 +1,1 @@
+docker run -d --name Nginx -p 80:80 -v /site: nginx
