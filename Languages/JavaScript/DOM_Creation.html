@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Aula Javascript</title>
+        <meta charset="utf-8"> 
+    </head>
+
+    <body>
+        <div id="app">
+            <input name = "entrada"/>
+            <button class="btzeira">Me pressione</button>
+
+        </div>
+
+        <script>
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', 'http://google.com')
+            
+            var textElement = document.createTextNode('Vai Google')
+            linkElement.appendChild(textElement)
+
+            var containerElement = document.getElementById("app")
+            containerElement.appendChild(linkElement)
+            
+        </script>
+        
+    </body>
+</html>

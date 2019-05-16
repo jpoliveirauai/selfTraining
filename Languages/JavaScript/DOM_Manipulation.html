@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Aula Javascript</title>
+        <meta charset="utf-8"> 
+    </head>
+
+    <body>
+        <!-- <script type="text/javascript" src="exercicios/01.js" ></script> -->
+        <!-- <script type="text/javascript" src="knowing.js" > </script> -->
+        <div id="app">
+            <input name = "entrada"/>
+            <!-- <button onmouseover='mostraAlerta("HAHA")' onclick='mostraAlerta("vesh")'>Me pressione</button> -->
+            <button class="btzeira">Me pressione</button>
+
+        </div>
+
+        <script>
+            var inp = document.querySelector("div#app input");
+            var butElement = document.getElementsByClassName("btzeira");
+            var butElement = document.querySelector("div#app button.btzeira");
+            var text = document.getElementsByName("entrada")[0].value;
+
+
+            butElement.onclick = function (  ) {
+                alert(text);
+            }
+            
+            console.log(butElement);
+
+
+            function mostraAlerta (s){
+                alert ( s );
+            }
+        </script>
+        
+    </body>
+</html>
