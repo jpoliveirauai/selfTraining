@@ -70,3 +70,8 @@ const pessoa1 = {
 const pessoa2 = { ...pessoa1, tamanho: 1.75 }
 
 console.log(`Meu nome é ${pessoa2.nome} e tenho ${pessoa2.idade} anos!!!`)
+
+// Teste webpack
+import { soma as somaExp } from './funcoes'
+
+console.log(somaExp(1,2))
